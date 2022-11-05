@@ -1,6 +1,6 @@
 #ANGULAR #EsnCarousel
 
-Angular horizontal image carousel.
+<b>Angular horizontal image carousel</b> without using konva or other packages
 
 ---------------------INSTALLATION
 
