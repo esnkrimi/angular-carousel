@@ -1,0 +1,33 @@
+<div class="relative">
+  <div #frame id="frame" class="frame d-flex flex-nowrap">
+    <div class="items " *ngFor="let i of data.info;let j=index">
+      <div (click)="open(data.destinationUrlPrefix+i.key)">
+        <img [ngStyle]="{'width':data.imgWidth,'height':data.imgHeight}"
+          [src]="data.imagePrefix+i.key+data.imagePostfix">
+        <div class="font-weight-bold" [ngStyle]="{'border-color':data.borderColor}" *ngIf="i.f1">
+          {{i.f1}}
+        </div>
+        <div [ngStyle]="{'border-color':data.borderColor}" *ngIf="i.f2">
+          {{i.f2}}
+        </div>
+        <div [ngStyle]="{'border-color':data.borderColor}" *ngIf="i.f3">
+          {{i.f3}}
+        </div>
+        <div class="price font-weight-bold" [ngStyle]="{'border-color':data.borderColor}" *ngIf="i.f4">
+          {{i.f4}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute arrow-right">
+    <button [ngStyle]="{'background-color':data.arrowColor}" class="btn rounded-circle" (click)="scroll(0)">
+      <i class="fa fa-chevron-circle-right"></i>
+    </button>
+  </div>
+  <div class="absolute arrow-left">
+    <button [ngStyle]="{'background-color':data.arrowColor}" class="btn rounded-circle" (click)="scroll(1)">
+      <i class="fa fa-chevron-circle-left"></i>
+    </button>
+  </div>
+</div>

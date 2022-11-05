@@ -1,0 +1,60 @@
+.carousel {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-color: #6969dd #dd2f2f;
+    scrollbar-width: thin;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.frame {
+    position: absolute;
+    width: 100%;
+}
+
+div.relative {
+    position: relative;
+}
+
+div.absolute {
+    position: absolute;
+}
+
+.arrow-right {
+    right: 0px;
+    top: 50%;
+    vertical-align: middle;
+    justify-content: baseline;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.items>div>div,
+.price {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.items {
+    border: solid 1px #eeeeee;
+    margin: 0.3em;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 0.3s;
+}
+
+.items:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+img {
+    margin-bottom: 0.6em;
+}
